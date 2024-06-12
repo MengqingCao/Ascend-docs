@@ -19,6 +19,7 @@
    :caption: 原生支持的AI项目
 
    sources/pytorch/index.rst
+   sources/llamafactory/index.rst
 
 .. warning::
 
