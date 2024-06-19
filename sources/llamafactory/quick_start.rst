@@ -22,8 +22,6 @@
   export ASCEND_RT_VISIBLE_DEVICES=0
   export USE_MODELSCOPE_HUB=1
 
-多卡 NPU 用户请参考 :ref:`multi_npu`
-
 基于 LoRA 的模型微调
 ------------------------
 
@@ -45,6 +43,8 @@
 
   ``nproc_per_node, nnodes, node_rank, master_addr, master_port`` 为 torchrun 所需参数，其详细含义可参考 `PyTorch 官方文档 <https://pytorch.org/docs/stable/elastic/run.html>`_。
 
+NPU 多卡分布式训练请参考 :doc:`单机多卡微调 <./multi_npu>` 
+
 动态合并 LoRA 的推理
 ---------------------
 
@@ -62,8 +62,8 @@
 
 接下来即可在终端使用微调的模型进行问答聊天了！如下图所示，为在 NPU 成功推理的样例：
 
-.. figure:: ./images/chat.png
-  :align: left
+.. figure:: ./images/chat-llamafactory.gif
+  :align: center
 
 .. note::
   第一轮问答会有一些 warning 告警，这是由于 transformers 库更新所致，不影响推理的正常运行，请忽略
@@ -109,35 +109,3 @@ yaml 配置文件
 .. literalinclude:: ./qwen1_5_lora_sft_ds.yaml
     :language: yaml
     :linenos:
-
-
-.. _multi_npu:
-
-多卡 NPU 的使用
------------------
-
-使用以下脚本自动检测并指定多卡 NPU：
-
-.. code-block:: shell
-
-    # ------------------------------ detect npu --------------------------------------
-    # detect npu via npu-smi
-    if command -v npu-smi info &> /dev/null; then
-      num_npus=$(npu-smi info -l | grep "Total Count" | awk -F ":" '{print $NF}')
-      npu_list=$(seq -s, 0 $((num_npus-1)))
-    else
-      num_npus=-1
-      npu_list="-1"
-    fi
-    echo using npu : $npu_list
-    num_gpus=$(echo $npu_list | awk -F "," '{print NF}')
-    # --------------------------------------------------------------------------------
-    export ASCEND_RT_VISIBLE_DEVICES=$npu_list
-
-或使用 ``export ASCEND_RT_VISIBLE_DEVICES=0,1,2,3`` 指定所需 NPU 卡号，此处为 0~3 四卡 NPU。
-
-.. note::
-    
-    昇腾 NPU 卡从 0 开始编号，docker 容器内也是如此；
-    
-    如映射物理机上的 6，7 号 NPU 卡到容器内使用，其对应的卡号分别为 0，1

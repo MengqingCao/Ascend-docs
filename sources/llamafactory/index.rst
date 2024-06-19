@@ -6,4 +6,5 @@ LLaMA-Factory
 
    install.rst
    quick_start.rst
+   multi_npu.rst
    faq.rst

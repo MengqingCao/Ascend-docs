@@ -83,6 +83,7 @@ A：此类报错通常为部分 Tensor 未放到 NPU 上，请确保报错中算
 
 
 .. **Q：单卡 NPU 情况下，使用 DeepSpeed 训练模型，报错 AttributeError :'GemmaForCausalLM'obiect has no attribute"save checkpoint"，此处 GemmaForCausalLM 还可能为其他模型，详细报错如下图**
+
 **Q：单卡 NPU 情况下，使用 DeepSpeed 训练模型，报错 AttributeError :'GemmaForCausalLM'obiect has no attribute"save checkpoint"，此处 GemmaForCausalLM 还可能为其他模型**
 
 .. .. figure:: ./images/lf-bugfix.png
@@ -113,7 +114,7 @@ A：此问题一般为使用 ``python src/train.py`` 启动训练脚本或使用
 问题反馈
 ----------
 
-如果您遇到任何问题，欢迎在 `官方社区 <https://github.com/hiyouga/LLaMA-Factory/issues/>`_ 提 issue，我们将第一时间进行响应。
+如果您遇到任何问题，欢迎在 `官方社区 <https://github.com/hiyouga/LLaMA-Factory/issues/>`_ 提 issue，或在 `LLAMA-Factory × 昇腾交流群 <https://github.com/hiyouga/LLaMA-Factory/blob/main/assets/wechat_npu.jpg>`_ 内提问，我们将第一时间进行响应。
 
 *持续更新中 ...*
 

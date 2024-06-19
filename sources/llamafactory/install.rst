@@ -11,7 +11,9 @@
 - TODO
 
 .. warning::
-  LLAMA-Factory 支持的 CANN 最低版本为 8.0.rc1
+  LLAMA-Factory 支持的 CANN 最低版本为 8.0.rc1。
+
+  安装 CANN 时，请安装算子包，以应用 CANN 算子。
 
 Python 环境创建
 ----------------------
@@ -41,7 +43,7 @@ LLaMA-Factory 安装
 安装校验
 ----------------------
 
-使用 ``llamafactory-cli env`` 指令对 LLaMA-Factory × 昇腾的安装进行校验，如下图所示，正确显示 LLaMA-Factory、PyTorch NPU 和 CANN 版本号及 NPU 型号等信息即说明安装成功。
+使用 ``llamafactory-cli env`` 指令对 LLaMA-Factory × 昇腾的安装进行校验，如下所示，正确显示 LLaMA-Factory、PyTorch NPU 和 CANN 版本号及 NPU 型号等信息即说明安装成功。
 
 .. code-block:: shell
   
@@ -56,4 +58,11 @@ LLaMA-Factory 安装
   - TRL version: 0.9.4
   - NPU type: xxx
   - CANN version: 8.0.RC2.alpha001
+
+LLaMA-Factory 卸载
+----------------------
+
+.. code-block:: shell
+  
+  pip uninstall llamafactory
 
