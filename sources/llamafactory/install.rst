@@ -13,7 +13,7 @@
 .. warning::
   LLAMA-Factory 支持的 CANN 最低版本为 8.0.rc1。
 
-  安装 CANN 时，请安装算子包，以应用 CANN 算子。
+  安装 CANN 时，请同时安装 Kernel 算子包。
 
 Python 环境创建
 ----------------------
