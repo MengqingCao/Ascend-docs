@@ -20,6 +20,7 @@
 
    sources/pytorch/index.rst
    sources/llamafactory/index.rst
+   sources/open_clip/index.rst
 
 .. warning::
 
