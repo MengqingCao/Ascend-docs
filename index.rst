@@ -25,6 +25,8 @@
    sources/onnxruntime/index.rst
    sources/open_clip/index.rst
    sources/timm/index.rst
+   sources/Diffusers/index.rst
+   sources/opencv/index.rst
 
 .. warning::
 
@@ -122,11 +124,11 @@
                 </div>
                 <div class="flex-grow"></div>
                 <div class="flex space-x-4 text-blue-600">
-                    <a href="#">官方链接</a>
+                    <a href="https://github.com/opencv/opencv">官方链接</a>
                     <span class="split">|</span>
-                    <a href="#">安装指南</a>
+                    <a href="sources/opencv/install.html">安装指南</a>
                     <span class="split">|</span>
-                    <a href="#">快速上手</a>
+                    <a href="sources/opencv/quick_start.html">快速上手</a>
                 </div>
             </div>
             <!-- Card 6 -->
@@ -177,11 +179,11 @@
                 </div>
                 <div class="flex-grow"></div>
                 <div class="flex space-x-4 text-blue-600">
-                    <a href="#">官方链接</a>
+                    <a href="https://github.com/huggingface/diffusers">官方链接</a>
                     <span class="split">|</span>
-                    <a href="#">安装指南</a>
+                    <a href="sources/Diffusers/install.html">安装指南</a>
                     <span class="split">|</span>
-                    <a href="#">快速上手</a>
+                    <a href="sources/Diffusers/quick_start.html">快速上手</a>
                 </div>
             </div>
             <!-- Card 9 -->

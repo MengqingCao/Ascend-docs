@@ -53,7 +53,7 @@ torch-npu 安装
 
 .. code-block:: python
     :linenos:
-    :emphasize-lines: 2,14,15,16,18
+    :emphasize-lines: 2
 
     import torch
     import torch_npu
