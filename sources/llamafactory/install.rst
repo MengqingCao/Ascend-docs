@@ -49,8 +49,8 @@ LLAMA-Factory 下载安装
             <div class="code">
                 <p>创建并激活 Python 环境：</p>
                 <div class="highlight">
-                  <pre>conda create -y -n llamafactory python=3.10</pre>
-                  <pre>conda activate llamafactory</pre>
+                  <pre>conda create -y -n llamafactory python=3.10
+  conda activate llamafactory</pre>
                 </div>
             </div>
         <h3>LLaMA-Factory 安装</h3>

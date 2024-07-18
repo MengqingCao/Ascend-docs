@@ -27,7 +27,7 @@ OpenCV 当前支持 20+ 昇腾算子，此处根据图像处理应用场景，�
 
 .. code-block:: c++
     :linenos:
-    :emphasize-lines: 34,35,38,40,42,48,49
+    :emphasize-lines: 34,35,39,41,43,48,49
 
     // This file is part of OpenCV project.
     // It is subject to the license terms in the LICENSE file found in the top-level directory
