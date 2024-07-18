@@ -17,8 +17,8 @@ Python 环境创建
 .. code-block:: shell
     :linenos:
   
-    # 创建 python 3.10 的虚拟环境
-    conda create -n <your_env_name> python=3.10
+    # 创建名为 timm 的 python 3.10 的虚拟环境
+    conda create -y -n timm python=3.10
     # 激活虚拟环境
     conda activate <your_env_name>
 
@@ -31,7 +31,7 @@ timm 安装
 .. code-block:: shell
     :linenos:
 
-    pip install timm
+    pip install timm -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 torch-npu 安装
 ----------------------
@@ -42,9 +42,9 @@ torch-npu 安装
     :linenos:
 
     # install the dependencies
-    pip3 install attrs numpy==1.26.4 decorator sympy cffi pyyaml pathlib2 psutil protobuf scipy requests absl-py wheel typing_extensions
+    pip3 install attrs numpy==1.26.4 decorator sympy cffi pyyaml pathlib2 psutil protobuf scipy requests absl-py wheel typing_extensions -i https://pypi.tuna.tsinghua.edu.cn/simple
     # install torch and torch-npu
-    pip install torch==2.2.0 torch-npu==2.2.0
+    pip install torch==2.2.0 torch-npu==2.2.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 安装校验
 ----------------------
