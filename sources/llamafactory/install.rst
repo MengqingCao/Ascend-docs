@@ -49,8 +49,8 @@ LLAMA-Factory 下载安装
             <div class="code">
                 <p>创建并激活 Python 环境：</p>
                 <div class="highlight">
-                  <pre>conda create -n your_env_name python=3.10</pre>
-                  <pre>conda activate your_env_name</pre>
+                  <pre>conda create -y -n llamafactory python=3.10</pre>
+                  <pre>conda activate llamafactory</pre>
                 </div>
             </div>
         <h3>LLaMA-Factory 安装</h3>
@@ -135,7 +135,13 @@ LLAMA-Factory 下载安装
 安装校验
 ----------------------
 
-使用 ``llamafactory-cli env`` 指令对 LLaMA-Factory × 昇腾的安装进行校验，如下所示，正确显示 LLaMA-Factory、PyTorch NPU 和 CANN 版本号及 NPU 型号等信息即说明安装成功。
+使用以下指令对 LLaMA-Factory × 昇腾的安装进行校验：
+
+.. code-block:: shell
+  
+  llamafactory-cli env
+
+如下所示，正确显示 LLaMA-Factory、PyTorch NPU 和 CANN 版本号及 NPU 型号等信息即说明安装成功。
 
 .. code-block:: shell
   

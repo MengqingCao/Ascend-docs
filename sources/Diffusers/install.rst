@@ -21,7 +21,7 @@ Python 环境创建
     :linenos:
   
     # 创建名为 diffusers 的 python 3.10 的虚拟环境
-    conda create -n diffusers python=3.10
+    conda create -y -n diffusers python=3.10
     # 激活虚拟环境
     conda activate diffusers
 
@@ -34,7 +34,7 @@ pip 安装
 .. code-block:: shell
     :linenos:
 
-    pip install diffusers torch==2.2.0 torch-npu==2.2.0 torchvision
+    pip install diffusers torch==2.2.0 torch-npu==2.2.0 torchvision -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 安装校验

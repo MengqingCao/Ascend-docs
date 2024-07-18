@@ -1,6 +1,9 @@
 快速开始
 ==================
 
+.. note::
+    阅读本篇前，请确保已按照 :doc:`安装教程 <./install>` 准备好昇腾环境及 Diffusers ！
+
 本示例以文生图 Diffusers 库中文生图任务为样例，展示如何进行文生图模型 stable-diffusion-xl-base-1.0 的基于 LoRA 的微调及动态合并 LoRA 的推理。
 
 文生图

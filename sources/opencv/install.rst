@@ -21,7 +21,7 @@ OpenCV 安装
   lib     最低版本    推荐版本
 =======  ==========  ==========
 OpenCV    4.9.0        latest
-Python    3.9          3.9
+Python    3.9          3.10
 GCC       9.4.0        9.4.0
 =======  ==========  ==========
 
@@ -32,7 +32,7 @@ Python 环境创建
     :linenos:
   
     # 创建名为 opencv 的 python 3.10 的虚拟环境
-    conda create -n opencv python=3.10
+    conda create -y -n opencv python=3.10
     # 激活虚拟环境
     conda activate opencv
 

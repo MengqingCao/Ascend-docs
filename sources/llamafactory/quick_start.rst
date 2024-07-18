@@ -88,8 +88,7 @@ yaml 配置文件
 
 开启微调
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-使用 torchrun 启动微调，通过 ``model_name_or_path`` 指定模型， ``output_dir`` 参数指定输出文件保存路径。
-微调涉及的所有参数均在 :ref:`qwen_yaml` 中设置。
+使用 torchrun 启动微调，微调涉及的所有参数均在 :ref:`qwen_yaml` 中设置。
 
 .. code-block:: shell
     
@@ -119,9 +118,9 @@ yaml 配置文件
                 --finetuning_type lora
 
 .. note::
-  确保微调及推理阶段使用同一 ``template`` 参数
+  确保微调及推理阶段使用同一 prompt 模板 ``template``
 
-接下来即可在终端使用微调的模型进行问答聊天了！如下图所示，为在 NPU 成功推理的样例：
+接下来即可在终端使用微调的模型进行问答聊天了！使用 ``Ctrl+C`` 或输入 ``exit`` 退出该问答聊天，如下图所示，为在 NPU 成功推理的样例：
 
 .. figure:: ./images/chat-llamafactory.gif
   :align: center

@@ -1,6 +1,10 @@
 快速开始
 ==================
 
+.. note::
+
+    阅读本篇前，请确保已按照 :doc:`安装教程 <./install>` 准备好昇腾环境及 OpenCV ！
+    
 OpenCV 中昇腾算子入参列表和 cpu 及 cuda 算子保持一致，除了对昇腾必要的初始化、去初始化之外，用户无需学习 CANN API，仅需要将原来的接口添加 cann 包名（C++ 接口为使用 cann 命名空间），整体流程如下图所示：
 
 .. figure:: ./images/opencv_cannop.png
