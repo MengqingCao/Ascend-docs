@@ -28,6 +28,8 @@
    sources/timm/index.rst
    sources/Diffusers/index.rst
    sources/opencv/index.rst
+   sources/sd_webui/index.rst
+   sources/lm_evaluation/index.rst
 
 .. warning::
 
@@ -107,11 +109,11 @@
                 </div>
                 <div class="flex-grow"></div>
                 <div class="flex space-x-4 text-blue-600">
-                    <a href="#">官方链接</a>
+                    <a href="https://github.com/microsoft/DeepSpeed">官方链接</a>
                     <span class="split">|</span>
-                    <a href="#">安装指南</a>
+                    <a href="sources/deepspeed/install.html">安装指南</a>
                     <span class="split">|</span>
-                    <a href="#">快速上手</a>
+                    <a href="sources/deepspeed/quick_start.html">快速上手</a>
                 </div>
             </div>
             <!-- Card 5 -->
@@ -145,9 +147,9 @@
                 <div class="flex space-x-4 text-blue-600">
                     <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">官方链接</a>
                     <span class="split">|</span>
-                    <a href="#">安装指南</a>
+                    <a href="sources/sd_webui/install.html">安装指南</a>
                     <span class="split">|</span>
-                    <a href="#">快速上手</a>
+                    <a href="sources/sd_webui/quick_start.html">快速上手</a>
                 </div>
             </div>
             <!-- Card 7 -->
@@ -221,6 +223,24 @@
                     <a href="#">安装指南</a>
                     <span class="split">|</span>
                     <a href="#">快速上手</a>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="box rounded-lg p-4 flex flex-col items-center">
+                <div class="flex items-center mb-4">
+                    <div class="img w-16 h-16 rounded-md mr-4" style="background-image: url('_static/images/lm-evalution.png')"></div>
+                    <div>
+                        <h2 class="text-lg font-semibold">LM-Evalution-Harness</h2>
+                        <p class="text-gray-600 desc">语言模型评估工具</p>
+                    </div>
+                </div>
+                <div class="flex-grow"></div>
+                <div class="flex space-x-4 text-blue-600">
+                    <a href="https://github.com/EleutherAI/lm-evaluation-harness">官方链接</a>
+                    <span class="split">|</span>
+                    <a href="sources/lm_evaluation/install.html">安装指南</a>
+                    <span class="split">|</span>
+                    <a href="sources/lm_evaluation/quick_start.html">快速上手</a>
                 </div>
             </div>
         </div>
