@@ -11,7 +11,7 @@
 
 .. note::
 
-以下模型用到了Meta-Llama-3-8B-Instruct， 具体可以参考 `模型获取 <./modeldownload.html>`_。
+    以下模型用到了Meta-Llama-3-8B-Instruct， 具体可以参考 `模型获取 <./modeldownload.html>`_ 。
 
 AutoModelForCausalLM
 -----------------------------------------------
